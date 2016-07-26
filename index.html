@@ -14,7 +14,7 @@
             <div class="info">
                 <h2><a href="{{feed.link}}">{{feed.title}}</a></h2>
                 <div class="feedinfo">
-                    <a href="{{feed.mediaGroups[0].contents[0].url}}"><img
+                    <a href="{{feed.mediaGroups[0].contents[0].url}}" target="_blank"><img
                             ng-src="{{feed.mediaGroups[0].contents[0].thumbnails[0].url}}"></a>
                     <span ng-show="showDetails" ng-bind-html="feed.content | unsafe"></span>
                     <div class="btn btn-right" href="#" ng-click="showDetails = ! showDetails">detail view</div>
